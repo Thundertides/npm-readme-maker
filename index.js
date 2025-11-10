@@ -76,7 +76,7 @@ ${answers.usage}
 \`\`\`
 
 ## License
-${answers.license}
+[![License: ${answers.license}](https://img.shields.io/badge/license-${answers.license}-green.svg)](LICENSE)
 
 ## Contributing
 ${answers.contributing}
@@ -88,7 +88,7 @@ ${answers.author}
 
   fs.writeFile("README.md", content, (err) => {
     if (err) throw err;
-    console.log(chalk.green"README.md created successfully!");
+    console.log(chalk.green("README.md created successfully!"));
   });
 }
 
