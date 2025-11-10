@@ -2,6 +2,7 @@
 
 import inquirer from "inquirer";
 import fs from "fs";
+import chalk from "chalk";
 
 async function main() {
   console.log("Welcome to README Generator");
@@ -51,7 +52,7 @@ async function main() {
       },
     ]);
     if (!overwrite) {
-      console.log(chalk.yellow("⚠️  Aborted. No changes made."));
+      console.log(chalk.yellow("Aborted. No changes made."));
       return;
     }
   }

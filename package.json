@@ -21,6 +21,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
+    "chalk": "^5.6.2",
     "inquirer": "^12.11.0"
   }
 }
