@@ -10,7 +10,7 @@ Pull Repository, NPM install
 
 ## Usage
 
-npx . or npm link and npm-readme-maker
+npm install @thundertides/npm-readme-maker@1.0.0
 
 ## License
 
