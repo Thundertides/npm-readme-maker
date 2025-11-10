@@ -7,13 +7,38 @@ async function main() {
   console.log("Welcome to README Generator");
 
   const answers = await inquirer.prompt([
-    { name: "title", message: "Enter the title of your project:" },
-    { name: "description", message: "Enter a description of your project:" },
-    { name: "installation", message: "Enter installation instructions:" },
-    { name: "usage", message: "Enter usage instructions:" },
-    { name: "license", message: "Enter the license for your project:" },
-    { name: "contributing", message: "Enter contribution guidelines:" },
-    { name: "author", message: "Enter your name:" },
+    {
+      name: "title",
+      message: "Enter the title of your project:",
+      default: "My Project",
+    },
+    {
+      name: "description",
+      message: "Enter a description of your project:",
+      default: "A simple project.",
+    },
+    {
+      name: "installation",
+      message: "Enter installation instructions:",
+      default: "npm install",
+    },
+    {
+      name: "usage",
+      message: "Enter usage instructions:",
+      default: "npm start",
+    },
+    {
+      name: "license",
+      message: "Choose a license:",
+      type: "list",
+      choices: ["MIT", "Apache 2.0", "GPL 3.0", "Unlicense"],
+    },
+    {
+      name: "contributing",
+      message: "Enter contribution guidelines:",
+      default: "Pull requests are welcome!",
+    },
+    { name: "author", message: "Enter your name:", default: "Anonymous" },
   ]);
 
   const content = `# ${answers.title}
