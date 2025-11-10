@@ -1,5 +1,5 @@
 {
-  "name": "npm-readme-maker",
+  "name": "@thundertides/npm-readme-maker",
   "version": "1.0.0",
   "description": "A simple CLI to generate a README.md file",
   "main": "index.js",
@@ -9,10 +9,17 @@
   "bin": {
     "readme-lite": "./index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thundertides/npm-readme-maker.git"
+  },
   "type": "module",
   "keywords": [],
-  "author": "Thundertide",
+  "author": "Thundertides",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "inquirer": "^12.11.0"
   }

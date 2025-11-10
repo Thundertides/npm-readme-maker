@@ -22,4 +22,4 @@ A quick project, I am unlikely to accept contributions but we will see.
 
 ## Author
 
-Thundertide
+Thundertides
