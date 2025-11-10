@@ -1,8 +1,10 @@
 # NPM README Maker
 
 ## Description
+[![GitHub package](https://img.shields.io/badge/GitHub%20Packages-@<your-username>/readme--md--generator--lite-blue?logo=github)](https://github.com/<your-username>/readme-md-generator-lite/packages)
 
-Creates READMEs using NPM and JS
+
+A simple CLI that helps you create a neat `README.md` file for your new projects — fast, friendly, and fully customizable.
 
 ## Installation
 
@@ -14,7 +16,7 @@ npx . or npm link and npm-readme-maker
 
 ## License
 
-MIT
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## Contributing
 
