@@ -1,7 +1,7 @@
 # NPM README Maker
 
 ## Description
-[![GitHub package](https://img.shields.io/badge/GitHub%20Packages-@thundertides/npm--readme--maker-blue?logo=github)](https://github.com/<your-username>/readme-md-generator-lite/packages)
+[![GitHub package](https://img.shields.io/badge/GitHub%20Packages-@thundertides/npm--readme--maker-blue?logo=github)](https://github.com/thundertides/npm-readme-maker/packages)
 
 
 A simple CLI that helps you create a neat `README.md` file for your new projects — fast, friendly, and fully customizable.
