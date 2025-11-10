@@ -41,6 +41,21 @@ async function main() {
     { name: "author", message: "Enter your name:", default: "Anonymous" },
   ]);
 
+  if (fs.existsSync("README.md")) {
+    const { overwrite } = await inquirer.prompt([
+      {
+        type: "confirm",
+        name: "overwrite",
+        message: "README.md already exists. Overwrite?",
+        default: false,
+      },
+    ]);
+    if (!overwrite) {
+      console.log(chalk.yellow("⚠️  Aborted. No changes made."));
+      return;
+    }
+  }
+
   const content = `# ${answers.title}
 
 ## Description
@@ -49,18 +64,20 @@ ${answers.description}
 
 ## Installation
 
+\`\`\`bash
 ${answers.installation}
+\`\`\`
 
 ## Usage
 
+\`\`\`bash
 ${answers.usage}
+\`\`\`
 
 ## License
-
 ${answers.license}
 
 ## Contributing
-
 ${answers.contributing}
 
 ## Author
