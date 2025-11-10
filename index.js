@@ -88,7 +88,7 @@ ${answers.author}
 
   fs.writeFile("README.md", content, (err) => {
     if (err) throw err;
-    console.log("README.md created successfully!");
+    console.log(chalk.green"README.md created successfully!");
   });
 }
 
