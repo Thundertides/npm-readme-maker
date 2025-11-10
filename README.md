@@ -6,11 +6,11 @@ Creates READMEs using NPM and JS
 
 ## Installation
 
-Pull Repository, NPM install
+npm install @thundertides/npm-readme-maker@1.0.0
 
 ## Usage
 
-npm install @thundertides/npm-readme-maker@1.0.0
+npx . or npm link and npm-readme-maker
 
 ## License
 
